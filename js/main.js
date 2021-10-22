@@ -2,7 +2,7 @@ let show = false;
 let menu_size = 38;
 
 $(document).ready(() => {
-    let screen_height = screen.height - menu_size;
+    let screen_height = screen.availHeight - menu_size;
     move_to("#home");
     $(".welcome").css("height", screen_height + "px");
     $(".welcome").css("padding-top", screen_height / 2 - 80 + "px");
