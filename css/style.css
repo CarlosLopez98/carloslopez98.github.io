@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /* Palette */
+    --blue: #4977FF;
+    --blue-hover: #4976ffce; 
+    --second-blue: #00B2FF;
+    --light-blue: #00DBF6;
+    --light-green: #6BFBCE;
+    --red: #F33153;
+    --black: #454555;
+    --white: #F9F8FF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+body {
+    background-color: var(--white);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    background-color: var(--white);
+}
+
+.welcome {
+    margin-top: 38px;
+    background-color: var(--black);
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    position: fixed;
+    top: -190px;
+}
+
+.navbar-list {
+    width: 100%;
+}
+
+.navbar-item {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    padding: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar-item:hover {
+    color: var(--white);
+    background-color: var(--blue-hover);
+    cursor: pointer;
+}
+
+#toggler {
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom: 1px solid var(--blue-hover);
+}
+
+.welcome .intro {
+    text-align: center;
+}
+
+.welcome .intro-text p {
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.welcome .name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blue);
+    text-align: center;
+}
+
+.intro .more {
+    width: 130px;
+    height: 40px;
+    margin: 15px 0;
+    padding: 5px;
+    background-color: var(--black);
+    border-color: var(--blue);
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.intro .more:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+/* ABOUT */
+.about {
+    height: auto;
+    padding: 1.5rem 0;
+    background-color: var(--white);
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.underline {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: var(--red);
+}
+
+.about .photo {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+    border-radius: 100%;
+}
+
+.about .photo img {
+    display: inline;
+    height: 100%;
+    width: auto;
+}
+
+.about .description {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about .description p {
+    font-weight: 300;
+}
+
+.about .description .highlight {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.qualities {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.qualities .quality {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.quality .icon {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0 auto;
+    background: var(--blue);
+    background: linear-gradient(137deg, rgba(73,119,255,1) 0%, rgba(107,251,206,1) 100%);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.quality .icon span {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+/* SKILLS */
+.skills {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0;
+    background: rgb(107,251,206);
+    background: linear-gradient(137deg, rgba(107,251,206,1) 0%, rgba(73,119,255,1) 30%, rgba(69,69,85,1) 86%);
+}
+
+.skills h2 {
+    display: inline-block;
+    width: 100%;
+    color: var(--white);
+}
+
+.skills .skill {
+    float: left;
+    width: 30%;
+    margin: 10px 10%;
+}
+
+.skill .logo {
+    overflow: hidden;
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 25%;
+    background-color: var(--white);
+}
+
+.skill .logo img {
+    display: inline;
+    height: 100%;
+}
+
+/* PROJECTS */
+.projects {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0;
+    background-color: var(--white);
+}
+
+.project-card {
+    overflow: hidden;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 5px;
+    box-shadow: -4px 4px 6px #888888;
+}
+
+.project-card:hover {
+    cursor: pointer;
+}
+
+.project-card .image {
+    width: 100%;
+}
+
+.project-card .image img {
+    width: 100%;
+}
+
+.project-card .title {
+    text-align: center;
+}
+
+.title h3 {
+    color: var(--blue);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.desc {
+    padding: 2px;
+    text-align: center;
+}
+
+.desc p {
+    font-size: 0.8rem;
+}
+
+/* CONTACT */
+.contact {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0;
+    background: rgb(243,49,83);
+    background: linear-gradient(137deg, rgba(243,49,83,1) 0%, rgba(69,69,85,1) 100%);
+}
+
+.contact h2 {
+    color: var(--white);
+}
+
+.contact .form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form .field {
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+.form .field span {
+    font-size: 1.2rem;
+}
+
+.form .field input {
+    width: 86%;
+    height: 40px;
+    border: none;
+    background-color: #FFFFFF00;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.form .field input:focus {
+    outline: none;
+}
+
+.form .field textarea {
+    width: 100%;
+    padding: 1px 10px;
+    background-color: #FFFFFF00;
+    font-weight: 500;
+    color: var(--white);
+    outline: none;
+    border: none;
+    resize: none;
+    overflow-y: auto;
+}
+
+.form button {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background: rgb(243,49,83);
+    background: linear-gradient(137deg, rgba(69,69,85,1) 0%, rgba(243,49,83,1) 100%);
+    color: var(--white);
+}
+
+.form button:hover {
+    cursor: pointer;
+    background: rgb(243,49,83);
+    background: linear-gradient(137deg, rgba(243,49,83,1) 0%, rgba(69,69,85,1) 100%);
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black);
+    box-shadow: -4px 0 6px #F9F8FF;
+}
+
+/* RESPONSIVE */
+@media (min-width: 426px) {
+    .project-card {
+        width: 70%;
+    }
+}
+
+@media (min-width: 641px) {
+    .navbar {
+        padding: 10px;
+        background-color: var(--black);
+        top: 0px !important;
+    }
+    
+    .navbar-item {
+        width: auto;
+        color: var(--white);
+    }
+
+    .navbar-item span {
+        color: var(--white);
+    }
+    
+    #toggler {
+        display: none;
+    }
+
+    .welcome .intro-text p {
+        font-size: 1.5rem;
+    }
+    
+    .welcome .name {
+        font-size: 2rem;
+    }
+
+    .about .description {
+        width: 80%;
+    }
+
+    .about .qualities {
+        float: left;
+        width: 80%;
+        margin: 1rem 10%;
+    }
+
+    .about .quality {
+        float: left;
+        width: 30%;
+        margin: 0 1.5%;
+    }
+
+    .skills .skill {
+        width: 30%;
+        margin: 10px 1.5%;
+    }
+
+    .projects {
+        float: left;
+    }
+
+    .project-card {
+        float: left;
+        width: 45%;
+        margin: 1rem 2.5%;
+    }
+
+    .contact .form {
+        width: 80%;
+    }
+}
+
+@media (min-width: 901px) {
+    .project-card {
+        width: 30%;
+        margin: 1rem 10%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .welcome .intro-text p {
+        font-size: 2rem;
+    }
+    
+    .welcome .name {
+        font-size: 2.5rem;
+    }
+
+    .about .description {
+        width: 60%;
+    }
+
+    .about .qualities {
+        float: left;
+        width: 60%;
+        margin: 1rem 20%;
+    }
+
+    .about .quality {
+        float: left;
+        width: 30%;
+        margin: 0 1.5%;
+    }
+
+    .skills .skill {
+        width: 22%;
+        margin: 10px 1.5%;
+    }
+
+    .projects {
+        float: left;
+    }
+
+    .project-card {
+        float: left;
+        width: 25%;
+        margin: 1rem 4.1%;
+    }
+
+    .contact .form {
+        width: 60%;
+    }
+}

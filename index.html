@@ -2,18 +2,212 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>Mi página</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carlos Lopez - Portafolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
 	<div class="container">
-		<div class="row justify-content-center">
-			<h1 class="">Hola, soy Carlos López</h1>
+		<div class="welcome" id="home">
+			<div class="navbar" id="navbar">
+				<ul class="navbar-list">
+					<li class="navbar-item" id="home-link"><span class="icon-home"></span>Home</li>
+					<li class="navbar-item" id="about-link"><span class="icon-user"></span>About me</li>
+					<li class="navbar-item" id="skills-link"><span class="icon-tools"></span>Skills</li>
+					<li class="navbar-item" id="projects-link"><span class="icon-suitcase"></span>Projects</li>
+					<li class="navbar-item" id="contact-link"><span class="icon-mail"></span>Contact</li>
+					<li class="navbar-item" id="toggler">Menu</li>
+				</ul>
+			</div>
+			
+			<div class="intro">
+				<div class="intro-text">
+					<p>Hello</p>
+					<p>I'm <span class="name">Carlos Lopez</span></p>
+					<p>Software Engineer</p>
+				</div>
+				<button class="more">View more</button>
+			</div>
+		</div>
+
+		<div class="about" id="about">
+			<h2>About Me</h2>
+			<div class="underline"></div>
+			<div class="photo">
+				<img src="img/user-avatar.png" alt="Careto">
+			</div>
+			<article class="description">
+				<p>
+					Hey! I'm Carlos and i'm currently studying a 
+					degree of <span class="highlight">Systems 
+					Engineering</span> in Colombia. I really 
+					like to design and develop software, i already 
+					maked some <span class="highlight">clasic games, 
+					static web sites and web sites that connect to API's 
+					that i did also.</span>
+				</p>
+			</article>
+			<div class="qualities">
+				<div class="quality">
+					<div class="icon"><span class="icon-flash"></span></div>
+					<div class="info">
+						<p>Fast learning</p>
+					</div>
+				</div>
+				<div class="quality">
+					<div class="icon"><span class="icon-hourglass"></span></div>
+					<div class="info">
+						<p>Manage of the time</p>
+					</div>
+				</div>
+				<div class="quality">
+					<div class="icon"><span class="icon-newspaper"></span></div>
+					<div class="info">
+						<p>Updated to new tech</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="skills" id="skills">
+			<h2>Skills</h2>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-html.png" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-css.png" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-js.png" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-bootstrap.svg" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-python.png" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-django.svg" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-sql.png" alt="html5">
+				</div>
+			</div>
+
+			<h2>Currently Learning</h2>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-react.png" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-ts.png" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-node.jpg" alt="html5">
+				</div>
+			</div>
+			<div class="skill">
+				<div class="logo">
+					<img src="img/logo-mongo.png" alt="html5">
+				</div>
+			</div>
+		</div>
+
+		<div class="projects" id="projects">
+			<h2>Projects</h2>
+			<div class="underline"></div>
+			<div class="project-card">
+				<div class="image">
+					<img src="https://www.mapix.com/wp-content/uploads/2018/04/500x300.png" alt="">
+				</div>
+				<div class="title">
+					<h3>Project title</h3>
+				</div>
+				<div class="desc">
+					<p>Little description of the project</p>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="image">
+					<img src="https://www.mapix.com/wp-content/uploads/2018/04/500x300.png" alt="">
+				</div>
+				<div class="title">
+					<h3>Project title</h3>
+				</div>
+				<div class="desc">
+					<p>Little description of the project</p>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="image">
+					<img src="https://www.mapix.com/wp-content/uploads/2018/04/500x300.png" alt="">
+				</div>
+				<div class="title">
+					<h3>Project title</h3>
+				</div>
+				<div class="desc">
+					<p>Little description of the project</p>
+				</div>
+			</div>
+
+			<div class="project-card">
+				<div class="image">
+					<img src="https://www.mapix.com/wp-content/uploads/2018/04/500x300.png" alt="">
+				</div>
+				<div class="title">
+					<h3>Project title</h3>
+				</div>
+				<div class="desc">
+					<p>Little description of the project</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="contact" id="contact">
+			<h2>Contact</h2>
+			<div class="form">
+				<div class="field">
+					<span class="icon-user"></span>
+					<input type="text" id="name" placeholder="What is your name?" />
+				</div>
+				<div class="field">
+					<span class="icon-mail"></span>
+					<input type="text" id="email" placeholder="What is your email?" />
+				</div>
+				<div class="field">
+					<span class="icon-comment"></span>
+					<textarea name="" id="message" cols="30" rows="10" placeholder="Write a message..."></textarea>
+				</div>
+				<button type="button" id="submit">Send</button>
+			</div>
+		</div>
+
+		<div class="footer">
+			Designed and developed by Carlos Lopez
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
