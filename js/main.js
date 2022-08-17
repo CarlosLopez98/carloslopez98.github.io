@@ -52,6 +52,14 @@ $(document).ready(() => {
   $("#project1").click(() => {
     window.open("https://yourimage.herokuapp.com/", "_blank");
   });
+
+  $("#project2").click(() => {
+    window.open("https://mybluetimer.netlify.app/", "_blank");
+  });
+
+  $("#project3").click(() => {
+    window.open("https://infomovies.herokuapp.com/", "_blank");
+  });
 });
 
 let move_to = (id) => {
