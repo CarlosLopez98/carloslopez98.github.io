@@ -60,6 +60,10 @@ $(document).ready(() => {
   $("#project3").click(() => {
     window.open("https://infomovies.herokuapp.com/", "_blank");
   });
+  
+  $("#project4").click(() => {
+    window.open("https://whiteecommerce.netlify.app", "_blank");
+  });
 });
 
 let move_to = (id) => {
